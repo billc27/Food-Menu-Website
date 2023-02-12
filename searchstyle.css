@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+body {
+    background-color: #4dffb8;
+}
+  
+.container {
+    position: absolute;
+    padding: 3em 2em;
+    font-size: 15px;
+    width: 95vw;
+    max-width: 30em;
+    border-radius: 0.6em;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: #ffffff;
+}
+  
+.search-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.4em;
+}
+  
+.search-container input {
+    font-size: 1em;
+    padding: 0.6em;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+  
+.search-container button {
+    font-size: 1em;
+    background-color: #fbf12e;
+    border: none;
+    font-weight: 550;
+    border-radius: 0.6em;
+  }
+  
+img {
+    display: block;
+    margin: 1em auto 0 auto;  
+    width: 50%;  
+}
+
+ul {
+    text-transform: capitalize;
+    font-size: 1em;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.7em 1.3em;
+    padding: 1.4em 0 0 1.4em;
+    color: black;
+}
+  
+p {
+    text-align: center;
+    margin-top: 1.8em;
+    color: black;
+}
+  
+.details {
+    background-color: #fbf12e;
+    position: relative;
+    margin: 1em 0 0 0;
+    padding: 0.6em 0;
+    text-align: center;
+    border-radius: 0.6em;
+}
+  
+.details h1 {
+    font-size: 1.3em;
+    font-weight: 550;
+}
+  
+.details h2 {
+    font-size: 1em;
+    font-weight: 425;
+}
+
+#recipe {
+    display: none;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0.6em;
+    z-index: 3;
+    background-color: #ffffff;
+}
+
+#recipe pre {
+    padding: 2.6em 1.4em 1.4em 1.4em;
+    font-size: 1em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: black;
+}
+
+#showrecipe {
+    position: relative;
+    top: 1.5em;
+    left: 75%;
+    padding: 0.9em 0.6em;
+    border-radius: 0.3em;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    background-color: #fbf12e;
+}
+
+#hiderecipe {
+    position: relative;
+    top: 2em;
+    width: 1.5em;
+    height: 1.5em;
+    left: 90%;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #fbf12e;
+}
+
+#hiderecipe:hover {
+    font-weight: 800;
+}
+  
+@media screen and (max-width: 480px) {
+    .container {
+      font-size: 12px;
+    }
+}
